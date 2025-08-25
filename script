@@ -1,0 +1,12 @@
+const fortunes = [
+  "Less is more 💙",
+  "Gentle care makes the biggest difference.",
+  "Your skin thanks you for keeping it simple.",
+  "Small acts of care add up.",
+  "Softness is strength."
+];
+
+function newFortune() {
+  const fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+  document.getElementById("fortune").textContent = fortune;
+}
